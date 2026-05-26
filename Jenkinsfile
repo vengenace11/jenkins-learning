@@ -11,7 +11,7 @@ pipeline {
 
         stage('Install Python packages') {
             steps {
-                sh 'python3 -m pip install --user -r requirements.txt'
+                sh 'python3 -m pip install --break-system-packages -r requirements.txt'
             }
         }
 
